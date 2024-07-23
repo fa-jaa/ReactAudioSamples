@@ -98,8 +98,8 @@ const MusicPlayer = ({ trackData }) => {
       <div className="flex justify-between items-center">
         <span className="text-gray-400 text-sm">Track</span>
         <div className="flex items-center space-x-2">
-          <button onClick={handleStar} className="focus:outline-none">
-            <Star className={isStarred ? "text-yellow-400" : "text-gray-300"} size={20} />
+        <button onClick={handleStar} className="focus:outline-none">
+            <Star className={`size={20} ${isStarred ? "text-yellow-400 fill-current" : "text-gray-300"}`} />
           </button>
           <button 
             onClick={handlePlayPause}
